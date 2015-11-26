@@ -1,0 +1,206 @@
+body {
+    margin: 0;
+}
+.full{
+    width: 100%;
+}
+.header{
+    height: 100px;
+    background-color: white;
+}
+.center{
+    height: 100px;
+    width: 994px;
+    margin: 0 auto;
+    background-color: white;
+    position: relative;
+}
+.logo {
+    position: absolute;
+    height: 60px;
+    width: 160px;
+    background-color: white;
+    top: 30px;
+    left: 20px;
+    font-size: 30px;
+    padding-left: 40px;
+    padding-top: 5px;
+}
+.buttons{
+    position: absolute;
+    height: 36px;
+    width: 540px;
+    background-color: white;
+    left: 390px;
+    top: 32px;
+}
+.button{
+    display: inline-block;
+    width: 100px;
+    height: 36px;
+    background-color: white;
+    line-height: 36px;
+    text-align: center;
+    border-radius: 10px;
+}
+.button:hover{
+    color: white;
+    cursor: pointer;
+}
+.button:first-child:hover {
+    background-color: #F23759;
+  }
+  .button:nth-child(2):hover {
+    background-color: #0089D5;
+  }
+  .button:nth-child(3):hover {
+    background-color: #F49624;
+  }
+  .button:nth-child(4):hover {
+    background-color: #1C9F5E;
+  }
+  .button:nth-child(5):hover {
+    background-color: #111111;
+  }
+.fb{
+    display: inline-block;
+    height: 36px;
+    width: 36px;
+    font-size: 15px;
+    background-color: pink;
+    border-radius: 10px;
+    line-height: 36px;
+    text-align: center;
+}
+.fb:hover{
+    color: white;
+    cursor: pointer;
+    background-color: black;
+}
+.video{
+    height: 344px;
+    background-color: blue;
+}
+.text{
+    height: 117px;
+    background-color: white;
+}
+.content1{
+    width: 800px;
+    height: 117px;
+    margin: 0 auto;
+    background-color: white;
+    position: relative;
+}
+.ltext{
+    height: 92px;
+    width: 400px;
+    background-color: white;
+    top: 10px;
+    position: absolute;
+}
+.rtext{
+    height: 92px;
+    width: 400px;
+    background-color: white;
+    position: absolute;
+    left: 400px;
+    top: 10px;
+}
+.channel-logo{
+    font-size: 40px;
+    display: inline-block;
+    margin-right: 30px;
+    margin-left: 30px;
+    color: blue;
+    height: 92px;
+    vertical-align: top;
+    line-height: 92px;
+}
+/* 哈哈哈哈 */
+.p{
+    display: inline-block;
+    font-size: 10px;
+}
+.text2{
+    height: 398px;
+    background-color: white;
+}
+.program{
+    position: relative;
+    top: 20px;
+    height: 50px;
+    width: 300px;
+    background-color: pink;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 5px;
+    border-radius: 20px;
+    color: white;
+}
+.p2{
+    font-size: 15px;
+    text-align: center;
+    padding-top: 40px;
+}
+.introduce{
+    background: grey;
+    color: white;
+    position: relative;
+    top: 30px;
+    height: 40px;
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 15px;
+    padding-top: 5px;
+}
+.programs{
+    height: 1610px;
+    background-color: white;
+}
+.activity{
+    height: 516px;
+    background-color: blue;
+}
+.footer{
+    height: 221px;
+    background-color: black;
+}
+.program-block{
+    height: 1738px;
+    width: 994px;
+    text-align: center;
+    background-color: white;
+    margin: 0 auto;
+}
+.title{
+    top: 20px;
+    height: 80px;
+    width: 300px;
+    background-color: white;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 20px;
+    border-radius: 20px;
+    color: brown;
+}
+.part{
+    height: 120px;
+    width: 306px;
+    background-color: black;
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 5px;
+    border-radius: 20px;
+    background-color: pink;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 60px;
+}
+.content{
+
+}
