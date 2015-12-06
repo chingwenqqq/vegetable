@@ -1,16 +1,19 @@
 body {
     margin: 0;
 }
-.full{
+.full {
     width: 100%;
 }
-.header{
-    height: 100px;
+.header {
     background-color:#f0f8ff;
+    position: fixed;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    top: 0;
 }
-.center{
-    height: 100px;
-    width: 994px;
+.center {
+    height: 70px;
+    width: 100%;
     margin: 0 auto;
     background-color:#f0f8ff;
     position: relative;
@@ -18,51 +21,55 @@ body {
 .logo {
     position: absolute;
     height: 60px;
-    width: 160px;
     background-color: #f0f8ff;
-    top: 30px;
+    top: 10px;
     left: 20px;
-    font-size: 30px;
     padding-left: 40px;
-    padding-top: 5px;
+    padding-top: 0px;
 }
-.buttons{
+.buttons {
     position: absolute;
     height: 36px;
-    width: 540px;
+    width: 700px;
     background-color: #f0f8ff;
-    left: 390px;
-    top: 50px;
+    left: 500px;
+    top: 20px;
 }
-.button{
+.button {
     display: inline-block;
-    width: 100px;
+    width: 120px;
     height: 36px;
     background-color: white;
     line-height: 36px;
     text-align: center;
     border-radius: 10px;
+    font-family: 'wt001';
 }
-.button:hover{
+a, a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+.button:hover {
     color: white;
     cursor: pointer;
 }
 .button:first-child:hover {
     background-color: #F23759;
-  }
-  .button:nth-child(2):hover {
+}
+.button:nth-child(2):hover {
     background-color: #0089D5;
-  }
-  .button:nth-child(3):hover {
+}
+.button:nth-child(3):hover {
     background-color: #F49624;
-  }
-  .button:nth-child(4):hover {
+}
+.button:nth-child(4):hover {
     background-color: #1C9F5E;
-  }
-  .button:nth-child(5):hover {
+}
+.button:nth-child(5):hover {
     background-color: #111111;
-  }
-.fb{
+}
+.fb {
     display: inline-block;
     height: 36px;
     width: 36px;
@@ -71,137 +78,127 @@ body {
     border-radius: 10px;
     line-height: 36px;
     text-align: center;
+    font-family: 'wt001'
 }
-.fb:hover{
+.fb:hover {
     color: white;
     cursor: pointer;
     background-color: black;
 }
-.video{
-    height: 500px;
+.index-image {
+    height: 90vh;
+    padding-top: 10vh;
     background-color: white;
     text-align: center;
-}
-.text{
-    height: 117px;
-    background-color: white;
-}
-.content1{
-    width: 800px;
-    height: 117px;
-    margin: 0 auto;
-    background-color: white;
     position: relative;
 }
-.ltext{
-    height: 92px;
-    width: 400px;
-    background-color: white;
-    top: 10px;
-    position: absolute;
+#grad1 {
+    height: 200px;
 }
-.rtext{
-    height: 92px;
-    width: 400px;
-    background-color: white;
-    position: absolute;
-    left: 400px;
-    top: 10px;
-}
-.channel-logo{
-    font-size: 40px;
-    display: inline-block;
-    margin-right: 30px;
-    margin-left: 30px;
-    color: blue;
-    height: 92px;
-    vertical-align: top;
-    line-height: 92px;
-}
-/* 哈哈哈哈 */
-.p{
-    display: inline-block;
-    font-size: 10px;
-}
-.text2{
-    height: 398px;
-    background-color: white;
-}
-.program{
+.read-more {
     position: relative;
     top: 20px;
     height: 50px;
     width: 300px;
-    background-color: #90EE90;
+    background-color: #32CD32;
     margin: 0 auto;
     text-align: center;
     font-size: 30px;
     padding-top: 20px;
     border-radius: 20px;
     color: white;
+    font-family: 'wt001';
 }
-.p2{
-    font-size: 15px;
-    text-align: center;
-    padding-top: 40px;
-}
-.introduce{
-    background: grey;
+.read-more:hover{
     color: white;
-    position: relative;
-    top: 30px;
-    height: 40px;
-    width: 200px;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 25px;
-    border-radius: 15px;
-    padding-top: 5px;
+    cursor: pointer;
+    background-color: green;
 }
-.programs{
-    height: 1610px;
-    background-color: white;
-}
-.activity{
-    height: 516px;
-    background-color: blue;
-}
-.footer{
-    height: 221px;
-    background-color: black;
-}
-.program-block{
-    height: 1738px;
-    width: 994px;
-    text-align: center;
-    background-color: white;
-    margin: 0 auto;
-}
-.title{
-    top: 20px;
-    height: 80px;
-    width: 300px;
-    background-color: white;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 40px;
-    padding-top: 20px;
-    border-radius: 20px;
-    color: brown;
-}
-.part{
-    height: 120px;
-    width: 306px;
-    background-color: black;
-    display: inline-block;
-    margin-top: 30px;
-    margin-left: 5px;
-    border-radius: 20px;
-    background-color: pink;
-    text-align: center;
-    font-size: 30px;
-    padding-top: 60px;
+.overlay {
+    background: linear-gradient(180deg, rgba(0,83,61,0.00) 50%, #FFB6C1 120%);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
 }
 .content{
-
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 200px;
 }
+h1 {
+    font-size: 40px;
+    font-family: "sourcehansans-tc";
+    color: #3CB371;
+}
+p {
+    color:green;
+    font-size: 20px;
+    font-family: 'sourcehansans-tc';
+}
+.problem{
+    height: 400px;
+    width: 700px;
+    background-color: white;
+    padding-top: 30px;
+    border-style: dotted;
+    margin: 0 auto;
+}
+.slogan1 {
+    position: relative;
+    font-family: 'sourcehansans-tc';
+    font-size: 20px;
+    color: white; 
+    padding: 50px 0;
+    margin-top: 100px;
+    margin-bottom:100px;  
+    text-shadow: 1px 1px 5px black;
+    overflow: hidden;
+}
+.slogan1 > h2 {
+    position: relative;
+    z-index: 15;
+}
+.slogan1-image {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    background-image: url("/image/Vegetables.jpg");
+    background-attachment: fixed;
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+    transform: scale(1.1);
+}
+.advantage {
+    width: 800px;
+    height: 300px;
+    background-color: pink;
+    margin: 0 auto;
+    position: relative;
+}
+.advantage-text {
+    width: 350px;
+    height: 300px;
+    background-color: yellow;
+    position: absolute;
+    left: 0;
+}
+.advantage-image {
+    width: 350px;
+    height: 300px;
+    background-color: green;
+    position: absolute;
+    right: 0;
+}
+.advantage-text > h3 {
+    padding-bottom: 100px;
+}
+
