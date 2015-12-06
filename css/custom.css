@@ -165,7 +165,7 @@ p {
     height: 100%;
     width: 100%;
     z-index: 10;
-    background-image: url("image/Vegetables.jpg");
+    background-image: url("../image/Vegetables.jpg");
     background-attachment: fixed;
     background-size: 100vw;
     background-repeat: no-repeat;
