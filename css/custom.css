@@ -4,25 +4,41 @@ body {
 .full {
     width: 100%;
 }
+.popup-outer {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
+.popup-content {
+    height: 500px;
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+}
 .header {
-    background-color:#f0f8ff;
+    background-color:#FFFF99;
     position: fixed;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
     z-index: 20;
     top: 0;
+    opacity: 0.;
+
 }
 .center {
     height: 70px;
     width: 100%;
     margin: 0 auto;
-    background-color:#f0f8ff;
+    background-color:#FFFF99;
     position: relative;
 }
 .logo {
     position: absolute;
-    height: 60px;
-    background-color: #f0f8ff;
-    top: 10px;
+    height: 30px;
+    background-color: #FFFF99;
+    top: 20px;
     left: 20px;
     padding-left: 40px;
     padding-top: 0px;
@@ -30,9 +46,9 @@ body {
 .buttons {
     position: absolute;
     height: 36px;
-    width: 700px;
-    background-color: #f0f8ff;
-    left: 500px;
+    width: 800px;
+    background-color: #FFFF99;
+    left: 400px;
     top: 20px;
 }
 .button {
@@ -54,21 +70,25 @@ a, a:visited {
     color: white;
     cursor: pointer;
 }
-.button:first-child:hover {
+a:first-child > .button:hover {
     background-color: #F23759;
 }
-.button:nth-child(2):hover {
+a:nth-child(2) > .button:hover {
     background-color: #0089D5;
 }
-.button:nth-child(3):hover {
+a:nth-child(3) > .button:hover {
     background-color: #F49624;
 }
-.button:nth-child(4):hover {
+a:nth-child(4) > .button:hover {
     background-color: #1C9F5E;
 }
-.button:nth-child(5):hover {
+a:nth-child(5) > .button:hover {
     background-color: #111111;
 }
+a:nth-child(6) > .button:hover {
+    background-color: #111111;
+}
+
 .fb {
     display: inline-block;
     height: 36px;
@@ -86,8 +106,8 @@ a, a:visited {
     background-color: black;
 }
 .index-image {
-    height: 90vh;
-    padding-top: 10vh;
+    height: 650px;
+    padding-top: 70px;
     background-color: white;
     text-align: center;
     position: relative;
@@ -114,20 +134,20 @@ a, a:visited {
     cursor: pointer;
     background-color: green;
 }
-.overlay {
+/*.overlay {
     background: linear-gradient(180deg, rgba(0,83,61,0.00) 50%, #FFB6C1 120%);
     position: absolute;
     top: 0;
     width: 100%;
     height: 100%;
-}
+}*/
 .content{
     text-align: center;
     padding-bottom: 200px;
 }
 h1 {
     font-size: 40px;
-    font-family: "sourcehansans-tc";
+    font-family: 'wt001';
     color: #3CB371;
     padding-top: 50px;
     padding-bottom: 30px;
@@ -139,17 +159,23 @@ p {
     padding-top: 20px;
     padding-bottom: 30px;
 }
+
+.title_image{
+    position: absolute;
+    padding-top: 50px;
+    padding-left: 35%;
+}
 .problem{
     height: 400px;
     width: 700px;
     background-color: white;
-    padding-top: 30px;
-    border-style: dotted;
+    padding-top: 10px;
+    padding-bottom: 30px;
     margin: 0 auto;
 }
 .slogan1 {
     position: relative;
-    font-family: 'sourcehansans-tc';
+    font-family: 'wt001';
     font-size: 20px;
     color: white; 
     padding: 50px 0;
@@ -180,6 +206,7 @@ p {
     filter: blur(2px);
     transform: scale(1.1);
 }
+
 .advantage {
     width: 700px;
     background-color: white;
@@ -201,7 +228,7 @@ p {
     padding-bottom: 10px;
     padding-top: 30px;
     font-size: 25px;
-    font-family: 'sourcehansans-tc';
+    font-family: 'wt001';
     color: white;
 }
 .advantage-text > h4{
@@ -209,6 +236,7 @@ p {
     padding-left: 50px;
     color: white;
     font-size: 20px;
+    font-family: 'sourcehansans-tc';
 }
 .our-design {
     clear: both;
@@ -239,6 +267,7 @@ p {
     width: 700px;
     margin:0 auto; 
 }
+
 .position1{
     margin-bottom: 50px;
     width: 700px;

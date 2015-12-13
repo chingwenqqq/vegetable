@@ -1,31 +1,48 @@
+// 讓網頁會滑來滑去.
 function scrollTo(to, duration) {
-    var start = document.body.scrollTop,
-        change = to - start,
-        increment = 20;
+    var start = document.body.scrollTop
+    var change = to - start
+    var increment = 25
+    var elapsedTime = 0
 
-    var animateScroll = function(elapsedTime) {        
-        elapsedTime += increment;
-        var position = easeInOut(elapsedTime, start, change, duration);                        
-        document.body.scrollTop = position; 
+    var scrollInterval = setInterval(function() {
         if (elapsedTime < duration) {
-            setTimeout(function() {
-                animateScroll(elapsedTime);
-            }, increment);
+            elapsedTime += increment
+            var position = start + elapsedTime / duration * change
+            document.body.scrollTop = position
+        } else {
+            clearInterval(scrollInterval)
         }
-    };
-
-    animateScroll(0);
-}
-
-function easeInOut(currentTime, start, change, duration) {
-    currentTime /= duration / 2;
-    if (currentTime < 1) {
-        return change / 2 * currentTime * currentTime + start;
-    }
-    currentTime -= 1;
-    return -change / 2 * (currentTime * (currentTime - 2) - 1) + start;
+    }, increment)
 }
 function scrollToId(id) {
     var offset = document.getElementById(id).offsetTop
-    scrollTo(offset - 70, 700)
+    scrollTo(offset - 70, 500)
+}
+  // 置入google map.
+function initMap() {
+  var position = {lat: 25.0396295, lng: 121.5644203}
+  var map = new google.maps.Map(document.getElementById('position1'), {
+    center: position,
+    scrollwheel: false,
+    zoom: 13
+  })
+
+  // Create a marker and set its position.
+  var marker = new google.maps.Marker({
+    map: map,
+    position: position,
+    title: 'Hello World!'
+  })
+}
+initMap()
+
+function closePopup() {
+    document.getElementsByTagName("iframe")[0].src = ""
+    document.getElementsByClassName('popup-outer')[0].style.display = 'none'
+}
+
+function playVideo() {
+    document.getElementsByTagName("iframe")[0].src = "http://www.youtube.com/embed/PxNYvk_0Onw?autoplay=1"
+    document.getElementsByClassName('popup-outer')[0].style.display = 'block'
 }
