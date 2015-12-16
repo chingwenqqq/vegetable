@@ -12,8 +12,8 @@ body {
     z-index: 100;
 }
 .popup-content {
-    height: 500px;
-    width: 700px;
+    max-height: 500px;
+    max-width: 700px;
     margin: 0 auto;
     text-align: center;
     margin-top: 50px;
@@ -135,6 +135,7 @@ a:nth-child(6) > .button:hover {
     border-radius: 20px;
     color: white;
     font-family: 'wt001';
+    margin-bottom: 150px; 
 }
 .read-more:hover{
     color: white;
@@ -212,7 +213,7 @@ p {
     background-image: url("../image/Vegetables.jpg");
     background-attachment: fixed;
     background-size: 100vw;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-position: center;
     -webkit-filter: blur(2px);
     -moz-filter: blur(2px);
@@ -237,7 +238,8 @@ p {
     float: left;
 }
 .advantage-text {
-    background-color: #00cc99;
+    background-color: #3CB371;
+    opacity: 0.8;
 }
 .advantage-image {
     background-color: white;
