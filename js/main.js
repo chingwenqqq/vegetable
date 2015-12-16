@@ -42,7 +42,23 @@ function closePopup() {
     document.getElementsByClassName('popup-outer')[0].style.display = 'none'
 }
 
+function setVideoUrl(type) {
+    if (type == 'seat') {
+        window.location.hash = 'seat'
+    } else if (type == 'dish') {
+        window.location.hash = 'dish'
+    }   
+    playVideo()
+}
+
 function playVideo() {
-    document.getElementsByTagName("iframe")[0].src = "http://www.youtube.com/embed/PxNYvk_0Onw?autoplay=1"
-    document.getElementsByClassName('popup-outer')[0].style.display = 'block'
+  if (window.location.hash == '#dish') {
+    document.getElementsByTagName("iframe")[0].src = "http://www.youtube.com/embed/yiNP-bno-JI?autoplay=1"
+  } else {
+    document.getElementsByTagName("iframe")[0].src = "http://www.youtube.com/embed/PxNYvk_0Onw?autoplay=1"  
+  }
+  document.getElementsByClassName('popup-outer')[0].style.display = 'block'
+}
+window.onload = function() {
+  playVideo()
 }
