@@ -106,11 +106,18 @@ a:nth-child(6) > .button:hover {
     background-color: black;
 }
 .index-image {
-    height: 650px;
+    max-height: 650px;
+    width: 80%;
     padding-top: 70px;
     background-color: white;
     text-align: center;
     position: relative;
+    margin: 0 auto;
+}
+.index-image > img {
+    max-height: 450px;
+    max-width: 879px;
+    width: 100%;
 }
 #grad1 {
     height: 200px;
@@ -134,7 +141,8 @@ a:nth-child(6) > .button:hover {
     cursor: pointer;
     background-color: green;
 }
-/*.overlay {
+/*漸層
+.overlay {
     background: linear-gradient(180deg, rgba(0,83,61,0.00) 50%, #FFB6C1 120%);
     position: absolute;
     top: 0;
@@ -160,18 +168,25 @@ p {
     padding-bottom: 30px;
 }
 
-.title_image{
+.title_image {
     position: absolute;
     padding-top: 50px;
     padding-left: 35%;
 }
-.problem{
-    height: 400px;
-    width: 700px;
+.problem {
+    max-height: 400px;
+    max-width: 700px;
+    width: 80%;
+    height: 70vw;
     background-color: white;
     padding-top: 10px;
     padding-bottom: 30px;
     margin: 0 auto;
+}
+.problem > img {
+    max-height: 400px;
+    max-width: 600px;
+    width: 100%;
 }
 .slogan1 {
     position: relative;
@@ -208,21 +223,28 @@ p {
 }
 
 .advantage {
-    width: 700px;
+    max-width: 720px;
     background-color: white;
     margin: 0 auto;
     position: relative;
 }
 .advantage-text, .advantage-image {
-    width: 350px;
+    max-width: 350px;
     height: 300px;
+    border-style: dashed;
+    border-color: white;
+    border-width: 1px;
     float: left;
 }
 .advantage-text {
     background-color: #00cc99;
 }
 .advantage-image {
-    background-color: green;
+    background-color: white;
+}
+.advantage-image > img {
+    max-width: 350px;
+    width: 100%;
 }
 .advantage-text > h3 {
     padding-bottom: 10px;
@@ -245,67 +267,74 @@ p {
     padding-top: 70px;
 }
 .design{
-    width: 700px;
-    height: 400px;
+    width: 720px;
     margin: 0 auto;
-    margin-bottom: 50px;
-    position: relative;
+    margin-bottom: 100px;
     background-color: white;
 }
-.circle{
-    width: 700px;
-    height: 700px;
+.design > img {
+    max-height: 500px;
+    max-width: 514px;
+    width: 80%;
+    margin-top: 30px;
+}
+.design-image1 {
+    width: 350px;
+    height: 420px;
+    background-color: red;
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+.design-image2 {
+    width: 350px;
+    height: 200px;
+    background-color: green;
+    float: left;
+    margin-bottom: 20px;
+}
+.circle {
+    max-width: 700px;
+    max-height: 700px;
+    width: 100%;
+    height: 100vw;
     margin: 0 auto;
     margin-bottom: 50px;
     position: relative;
     background-image: url("../image/circle.png");
-    background-size: 600px;
+    background-size: 80%;
     background-repeat: no-repeat;
     background-position: center bottom;
 }
-.design-image1{
-    width: 330px;
-    height: 400px;
-    float: left;
-    background-color: white;
-}
-.design-image2{
-    width: 350px;
-    height:190px;
-    margin-left: 350px;
-    margin-bottom: 20px;
-    background-color: green;
-}
-.design-content {
-    height: 400px;
-    width: 280px;
-    background-color: ;
-    float: right;
-    color: green;
-    
-}
-.position{
-    width: 700px;
+.position {
+    max-width: 700px;
+    width: 80%;
     margin:0 auto; 
 }
 
-.position1{
+.position1 {
     margin-bottom: 50px;
-    width: 700px;
+    max-width: 700px;
     height: 400px;
     position: relative;
     background-color: yellow;
 }
 .team{
-    width: 700px;
+    max-width: 700px;
+    width: 80%;
     margin: 0 auto;
 }
 .our-team{
     margin-bottom: 50px;
-    width: 700px;
-    height: 400px;
+    max-width: 700px;
+    width: 100%;
+    max-height: 400px;
     position: relative;
-    background-color: yellow; 
+    background-color: white; 
+}
+.our-team > img{
+    max-width: 700px;
+    width: 100%;
 }
 .team-image-list {
     height: 300px;
@@ -324,4 +353,27 @@ p {
     width: 100%;
     height: 100px;
     background-color: #3CB371;
+}
+@media only screen and (max-width: 700px) {
+    body {
+        
+    }
+    p {
+        font-size: 20px;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    .header {
+        display: none;
+    }
+    .advantage {
+        width: 350px;
+    }
+    .design {
+        width: 350px;
+    }
+    .design:first-of-type {
+        height: 800px;
+    }
 }
