@@ -120,7 +120,7 @@ a:nth-child(6) > .button:hover {
 .index-image {
     max-height: 450px;
     max-width:  879px;
-    padding-top: 50px;
+    padding-top: 60px;
     background-color: white;
     text-align: center;
     position: relative;
@@ -337,6 +337,7 @@ p {
 }
 .position {
     max-width: 700px;
+    width: 80%;
     margin:0 auto; 
 }
 
