@@ -71,7 +71,7 @@ body {
     line-height: 36px;
     text-align: center;
     border-radius: 10px;
-    font-family: 'wt001';
+    font-family: ;
 }
 a, a:visited {
     color: inherit;
@@ -110,7 +110,7 @@ a:nth-child(6) > .button:hover {
     border-radius: 10px;
     line-height: 36px;
     text-align: center;
-    font-family: 'wt001'
+    font-family: 
 }
 .fb:hover {
     color: white;
@@ -144,7 +144,7 @@ a:nth-child(6) > .button:hover {
     padding-top: 20px;
     border-radius: 20px;
     color: white;
-    font-family: 'wt001';
+    font-family: ;
     margin-bottom: 180px; 
 }
 .read-more:hover{
@@ -166,7 +166,7 @@ a:nth-child(6) > .button:hover {
 }
 h1 {
     font-size: 40px;
-    font-family: 'wt001';
+    font-family: ;
     color: #3CB371;
     padding-top: 50px;
     padding-bottom: 30px;
@@ -276,7 +276,7 @@ p {
     padding-bottom: 10px;
     padding-top: 30px;
     font-size: 25px;
-    font-family: 'wt001';
+    font-family: ;
     color: white;
 }
 .advantage-text > h4{
@@ -342,7 +342,7 @@ p {
 }
 .position {
     max-width: 700px;
-    width: 80%;
+    width: 100%;
     margin:0 auto; 
 }
 
@@ -350,23 +350,24 @@ p {
     margin-bottom: 50px;
     max-width: 700px;
     height: 400px;
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
     position: relative;
     background-color: yellow;
 }
 .team{
     max-width: 700px;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 .our-team{
     margin-bottom: 50px;
     max-width: 700px;
-    width: 100%;
+    width: 90%;
     max-height: 400px;
     position: relative;
     background-color: white; 
+    margin: 0 auto;
 }
 .our-team > img{
     max-width: 700px;
