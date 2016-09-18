@@ -84,21 +84,73 @@ a, a:visited {
 }
 a:first-child > .button:hover {
     background-color: #F23759;
+    animation-name: change-bg1;
+    animation-duration: 0.3s;
+}
+@keyframes change-bg1 {
+    0% {
+       background-color: white; 
+    }
+    100% {
+        background-color: #F23759;
+    }
 }
 a:nth-child(2) > .button:hover {
     background-color: #0089D5;
+    animation-name: change-bg2;
+    animation-duration: 0.3s;
+}
+@keyframes change-bg2 {
+    0% {
+       background-color: white; 
+    }
+    100% {
+        background-color: #0089D5;
+    }
 }
 a:nth-child(3) > .button:hover {
     background-color: #F49624;
+    animation-name: change-bg3;
+    animation-duration: 0.3s;
+}
+@keyframes change-bg3 {
+    0% {
+       background-color: white; 
+    }
+    100% {
+        background-color: #F49624;
+    }
 }
 a:nth-child(4) > .button:hover {
     background-color: #1C9F5E;
+    animation-name: change-bg4;
+    animation-duration: 0.3s;
+}
+@keyframes change-bg4 {
+    0% {
+       background-color: white; 
+    }
+    100% {
+        background-color: #1C9F5E;
+    }
 }
 a:nth-child(5) > .button:hover {
     background-color: #111111;
+    animation-name: change-bg5;
+    animation-duration: 0.3s;
+}
+@keyframes change-bg5 {
+    0% {
+       background-color: white; 
+    }
+    100% {
+        background-color: #111111;
+    }
 }
 a:nth-child(6) > .button:hover {
     background-color: #111111;
+    animation-name: change-bg5;
+    animation-duration: 0.3s;
 }
 
 .fb {
@@ -134,23 +186,35 @@ a:nth-child(6) > .button:hover {
 }
 .read-more {
     position: relative;
-    top: 20px;
-    height: 50px;
+    top: -50px;
+    height: 60px;
+    line-height: 60px;
+    word-spacing: 5px;
     width: 300px;
     background-color: #3CB371;
     margin: 0 auto;
     text-align: center;
-    font-size: 30px;
-    padding-top: 10px;
+    font-size: 20px;
     border-radius: 20px;
     color: white;
-    font-family: ;
-    margin-bottom: 180px; 
+    margin-bottom: 300px; 
 }
 .read-more:hover{
-    color: white;
+    font-size: 25px;
     cursor: pointer;
     background-color: green;
+    animation-name: change-bg;
+    animation-duration: 0.3s;
+}
+@keyframes change-bg {
+    0% {
+        background-color: #3CB371;
+        font-size: 20px;
+    }
+    100% {
+        background-color: green;
+        font-size: 25px;
+    }
 }
 /*漸層
 .overlay {
@@ -173,8 +237,9 @@ h1 {
 }
 p {
     color: green;
-    font-size: 23px;
+    font-size: 20px;
     font-family: 'sourcehansans-tc';
+    line-height: 35px;
     padding-top: 20px;
     padding-bottom: 30px;
     padding-right: 30px;
@@ -220,6 +285,8 @@ p {
 .slogan1 > h2 {
     position: relative;
     z-index: 15;
+    font-family: 'Open Sans Condensed', sans-serif;
+    word-spacing: 10px;
 }
 .slogan1-image {
     position: absolute;
@@ -278,21 +345,23 @@ p {
     font-size: 25px;
     font-family: ;
     color: white;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 .advantage-text > h4{
     padding-right: 50px;
     padding-left: 50px;
+    line-height: 30px;
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'sourcehansans-tc';
     text-align: justify;
 
 }
 .our-design {
     max-width: 720px;
+    padding-top: 40px;
     margin: 0 auto;
     clear: both;
-
 }
 .design{
     width: 720px;
@@ -394,6 +463,7 @@ p {
 }
 .footer > h2 {
     font-size: 10px;
+    line-height: 30px;
     color: white;
     text-align: center;
     padding-top: 50px;
@@ -403,6 +473,13 @@ p {
 @media only screen and (max-width: 700px) {
     body {
         
+    }
+    .index-image > img {
+        width: 100%;
+    }
+    .read-more {
+        top: 10px;
+        margin-bottom: 100px;
     }
     p {
         font-size: 18px;
