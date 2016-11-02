@@ -59,7 +59,7 @@ body {
     position: absolute;
     height: 36px;
     width: 80%;
-    max-width: 800px;
+    min-width: 800px;
     background-color: #3CB371;
     left: 400px;
     top: 20px;
