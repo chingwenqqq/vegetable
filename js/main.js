@@ -53,9 +53,9 @@ function setVideoUrl(type) {
 
 function playVideo() {
   if (window.location.hash == '#dish') {
-    document.getElementsByTagName("iframe")[0].src = "http://www.youtube.com/embed/gE_7t2hAaWo?autoplay=1"
+    document.getElementsByTagName("iframe")[0].src = "https://www.youtube.com/embed/onuM93KYUvI"
   } else {
-    document.getElementsByTagName("iframe")[0].src = "http://www.youtube.com/embed/gE_7t2hAaWo?autoplay=1"  
+    document.getElementsByTagName("iframe")[0].src = "https://www.youtube.com/embed/onuM93KYUvI"  
   }
   document.getElementsByClassName('popup-outer')[0].style.display = 'block'
 }
