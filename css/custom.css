@@ -58,14 +58,16 @@ body {
 .buttons {
     position: absolute;
     height: 36px;
-    width: 800px;
+    width: 80%;
+    max-width: 800px;
     background-color: #3CB371;
     left: 400px;
     top: 20px;
 }
 .button {
     display: inline-block;
-    width: 120px;
+    width: 16%;
+    max-width: 120px;
     height: 36px;
     background-color: white;
     line-height: 36px;
