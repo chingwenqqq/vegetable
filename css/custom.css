@@ -61,7 +61,8 @@ body {
     width: 80%;
     min-width: 800px;
     background-color: #3CB371;
-    left: 400px;
+    left: 800px;
+    right: 200px;
     top: 20px;
 }
 .button {
