@@ -1,6 +1,6 @@
 // 讓網頁會滑來滑去.
 function scrollTo(to, duration) {
-    var start = document.body.scrollTop
+    var start = document.documentElement.scrollTop
     var change = to - start
     var increment = 25
     var elapsedTime = 0
@@ -9,7 +9,7 @@ function scrollTo(to, duration) {
         if (elapsedTime < duration) {
             elapsedTime += increment
             var position = start + elapsedTime / duration * change
-            document.body.scrollTop = position
+            document.documentElement.scrollTop = position
         } else {
             clearInterval(scrollInterval)
         }
